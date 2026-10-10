@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Torres // Global Promotores Seguros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandnavy: '#1e295d',   // Azul marino principal
+                        brandblue: '#2563eb',   // Azul rey institucional
+                        brandlightblue: '#0284c7',
+                        lightbg: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-lightbg text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar Superior -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <span class="text-2xl font-black text-brandnavy tracking-tight uppercase">GLOBAL</span>
+                <span class="block text-xs font-semibold text-slate-500 tracking-wider uppercase">Promotores Seguros // Carlos Torres</span>
+            </div>
+            <a href="https://wa.me/5218112761784?text=Hola%20Carlos,%20quisiera%20cotizar%20un%20seguro" 
+               target="_blank" 
+               class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2 rounded-lg text-sm transition duration-200 flex items-center gap-2 shadow">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span class="hidden sm:inline">Cotizar sin compromiso</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-brandnavy via-slate-900 to-brandblue text-white py-16 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="bg-white/10 text-blue-200 font-semibold text-xs tracking-widest uppercase px-4 py-1.5 rounded-full border border-white/20 inline-block mb-4">
+                Atención personalizada para personas, familias y empresas
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-4 leading-tight">
+                PROTEGEMOS LO QUE <span class="text-blue-400">MÁS VALORAS</span>
+            </h1>
+            <p class="text-lg text-slate-200 max-w-2xl mx-auto mb-8 font-light">
+                Soluciones de protección integral a tu medida. Asesoría honesta y clara con las mejores aseguradoras del país.
+            </p>
+            
+            <a href="https://wa.me/5218112761784?text=Hola%20Carlos,%20me%20interesa%20recibir%20asesor%C3%ADa%20sobre%20un%20seguro." 
+               target="_blank" 
+               class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl transition duration-300 text-lg">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                Solicitar Cotización por WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Grid de Ramos de Seguros -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-brandnavy uppercase tracking-tight">Coberturas & Soluciones</h2>
+            <p class="text-slate-500 text-sm mt-2">Encuentra la protección adecuada para cada aspecto de tu vida y negocio.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Auto -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-brandblue rounded-xl flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brandnavy mb-2">AUTO</h3>
+                <p class="text-slate-600 text-sm">Protección completa para ti y tu vehículo ante cualquier imprevisto vial.</p>
+            </div>
+
+            <!-- Gastos Médicos -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-notes-medical"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brandnavy mb-2">GASTOS MÉDICOS</h3>
+                <p class="text-slate-600 text-sm">Tu salud y la de tu familia protegidas en las mejores instituciones médicas.</p>
+            </div>
+
+            <!-- Vida -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-people-roof"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brandnavy mb-2">VIDA</h3>
+                <p class="text-slate-600 text-sm">Lo más importante de tu futuro: el respaldo económico para los que amas.</p>
+            </div>
+
+            <!-- Retiro -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brandnavy mb-2">RETIRO</h3>
+                <p class="text-slate-600 text-sm">Asegura hoy tu tranquilidad financiera para el mañana.</p>
+            </div>
+
+            <!-- Hogar -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-house-shield"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brandnavy mb-2">HOGAR</h3>
+                <p class="text-slate-600 text-sm">Tu patrimonio protegido ante robos, incendios o desastres naturales.</p>
+            </div>
+
+            <!-- Mascotas -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brandnavy mb-2">MASCOTAS</h3>
+                <p class="text-slate-600 text-sm">Ellos también son parte de la familia y merecen la mejor atención.</p>
+            </div>
+
+            <!-- Negocios & Empresarial -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-slate-100 text-slate-700 rounded-xl flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brandnavy mb-2">NEGOCIOS</h3>
+                <p class="text-slate-600 text-sm">Protegemos tu empresa, colaboradores y activos para hacerla sostenible.</p>
+            </div>
+
+            <!-- Ahorro e Inversión -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brandnavy mb-2">AHORRO E INVERSIÓN</h3>
+                <p class="text-slate-600 text-sm">Haz crecer tu dinero con rendimientos atractivos y total seguridad.</p>
+            </div>
+
+            <!-- Viajes & Otros -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brandnavy mb-2">VIAJES & MÁS</h3>
+                <p class="text-slate-600 text-sm">Viaja seguro siempre. Contamos con múltiples opciones a tu medida.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Aseguradoras / Respaldos -->
+    <section class="bg-white border-y border-slate-200 py-12 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-xs font-bold text-slate-400 tracking-widest uppercase mb-6">
+                TRABAJAMOS CON LAS MEJORES COMPAÑÍAS DEL PAÍS
+            </h3>
+            <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-10 text-slate-500 font-bold text-lg">
+                <span class="hover:text-brandnavy transition">GNP</span>
+                <span class="hover:text-brandnavy transition">AXA</span>
+                <span class="hover:text-brandnavy transition">MAPFRE</span>
+                <span class="hover:text-brandnavy transition">QUÁLITAS</span>
+                <span class="hover:text-brandnavy transition">CHUBB</span>
+                <span class="hover:text-brandnavy transition">ZURICH</span>
+                <span class="hover:text-brandnavy transition">SURA</span>
+                <span class="hover:text-brandnavy transition">ANA SEGUROS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA Final -->
+    <footer class="bg-brandnavy text-white py-12 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-extrabold mb-3">¿Listo para cotizar o revisar tu póliza actual?</h3>
+            <p class="text-slate-300 text-sm mb-6 max-w-xl mx-auto">
+                Sin ningún compromiso, te ayudamos a comparar opciones y encontrar la mejor tarifa.
+            </p>
+            <a href="https://wa.me/5218112761784?text=Hola%20Carlos,%20quisiera%20una%20cotizaci%C3%B3n%20para%20mi%20seguro." 
+               target="_blank" 
+               class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl shadow transition text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                Mandar Mensaje Directo a Carlos Torres
+            </a>
+            <p class="text-xs text-slate-400 mt-10">
+                <strong>Global Promotores Seguros</strong> — Asesoría Profesional por Carlos Torres
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
