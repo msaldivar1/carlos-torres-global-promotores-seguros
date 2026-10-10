@@ -118,13 +118,19 @@
                 <p class="text-slate-600 text-sm">Tu patrimonio protegido ante robos, incendios o desastres naturales.</p>
             </div>
 
-            <!-- Mascotas -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                    <i class="fa-solid fa-paw"></i>
+            <!-- Mascotas con Modal de Paquetes -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandnavy mb-2">MASCOTAS (GNP)</h3>
+                    <p class="text-slate-600 text-sm mb-4">Gastos médicos, responsabilidad civil, fallecimiento, baño, esterilización y más.</p>
                 </div>
-                <h3 class="text-xl font-bold text-brandnavy mb-2">MASCOTAS</h3>
-                <p class="text-slate-600 text-sm">Ellos también son parte de la familia y merecen la mejor atención.</p>
+                <button onclick="document.getElementById('modal-mascotas').classList.remove('hidden')" 
+                        class="w-full bg-teal-50 hover:bg-teal-100 text-teal-700 border border-teal-200 font-bold py-2 px-4 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-2 mt-2">
+                    <i class="fa-solid fa-list-check"></i> Ver Paquetes y Coberturas
+                </button>
             </div>
 
             <!-- Negocios & Empresarial -->
@@ -200,6 +206,122 @@
             </p>
         </div>
     </footer>
+
+    <!-- MODAL COBERTURAS MASCOTAS (GNP) -->
+    <div id="modal-mascotas" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden my-8 relative">
+            
+            <!-- Encabezado Modal -->
+            <div class="bg-brandnavy text-white p-6 flex justify-between items-center">
+                <div>
+                    <span class="text-teal-400 font-bold text-xs uppercase tracking-widest">// COBERTURA GNP SEGUROS</span>
+                    <h3 class="text-2xl font-black">Protección y Bienestar para tu Mascota</h3>
+                </div>
+                <button onclick="document.getElementById('modal-mascotas').classList.add('hidden')" class="text-slate-400 hover:text-white text-2xl font-bold p-2">
+                    &times;
+                </button>
+            </div>
+        
+            <!-- Tabla de Paquetes -->
+            <div class="p-6 grid md:grid-cols-3 gap-6 text-slate-800">
+            
+                <!-- Cuidado Máximo -->
+                <div class="border-2 border-teal-500 rounded-2xl p-5 bg-teal-50/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="bg-teal-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Más Completo</span>
+                        </div>
+                        <h4 class="text-lg font-black text-brandnavy uppercase">Cuidado Máximo</h4>
+                        <p class="text-2xl font-black text-teal-600 my-2">$4,435 <span class="text-xs font-normal text-slate-500">/ año</span></p>
+                        
+                        <ul class="text-xs space-y-2 text-slate-600 mt-4">
+                            <li class="font-bold text-slate-800 border-b pb-1">COBERTURAS PRINCIPALES:</li>
+                            <li>✓ Gastos Médicos: <strong>$30,000</strong></li>
+                            <li>✓ Responsabilidad Civil: <strong>$30,000</strong></li>
+                            <li>✓ Fallecimiento: <strong>$10,000</strong></li>
+                            <li>✓ Robo con Violencia: <strong>$5,000</strong></li>
+                            
+                            <li class="font-bold text-slate-800 border-b pb-1 pt-3">INCLUYE ASISTENCIAS:</li>
+                            <li>✓ Vet Telefónica <strong>Ilimitada</strong></li>
+                            <li>✓ Desparasitación (2 eventos)</li>
+                            <li>✓ Pipeta Antipulgas (2 eventos)</li>
+                            <li>✓ Vacuna Antirrábica & Esterilización</li>
+                            <li>✓ Baño, Peluquería, Corte de Uñas (3 eventos)</li>
+                            <li>✓ Cremación amparada</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5218182806318?text=Hola%20Carlos,%20me%20interesa%20el%20plan%20CUIDADO%20M%C3%81XIMO%20para%20mi%20mascota." 
+                       target="_blank" class="mt-6 w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2.5 rounded-xl text-center text-xs block uppercase">
+                        Cotizar Máximo
+                    </a>
+                </div>
+            
+                <!-- Cuidado Superior -->
+                <div class="border border-slate-200 rounded-2xl p-5 bg-white flex flex-col justify-between shadow-sm">
+                    <div>
+                        <h4 class="text-lg font-black text-brandnavy uppercase">Cuidado Superior</h4>
+                        <p class="text-2xl font-black text-brandnavy my-2">$2,824 <span class="text-xs font-normal text-slate-500">/ año</span></p>
+                        
+                        <ul class="text-xs space-y-2 text-slate-600 mt-4">
+                            <li class="font-bold text-slate-800 border-b pb-1">COBERTURAS PRINCIPALES:</li>
+                            <li>✓ Gastos Médicos: <strong>$20,000</strong></li>
+                            <li>✓ Responsabilidad Civil: <strong>$20,000</strong></li>
+                            <li>✓ Fallecimiento: <strong>$5,000</strong></li>
+                            <li class="text-slate-400">✕ Robo con Violencia: No incluido</li>
+                            
+                            <li class="font-bold text-slate-800 border-b pb-1 pt-3">INCLUYE ASISTENCIAS:</li>
+                            <li>✓ Vet Telefónica <strong>Ilimitada</strong></li>
+                            <li>✓ Desparasitación (1 evento)</li>
+                            <li>✓ Pipeta Antipulgas (1 evento)</li>
+                            <li>✓ Vacuna Antirrábica & Esterilización</li>
+                            <li>✓ Baño, Peluquería (1 evento)</li>
+                            <li>✓ Cremación amparada</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5218182806318?text=Hola%20Carlos,%20me%20interesa%20el%20plan%20CUIDADO%20SUPERIOR%20para%20mi%20mascota." 
+                       target="_blank" class="mt-6 w-full bg-brandnavy hover:bg-slate-800 text-white font-bold py-2.5 rounded-xl text-center text-xs block uppercase">
+                        Cotizar Superior
+                    </a>
+                </div>
+            
+                <!-- Cuidado Esencial -->
+                <div class="border border-slate-200 rounded-2xl p-5 bg-white flex flex-col justify-between shadow-sm">
+                    <div>
+                        <h4 class="text-lg font-black text-brandnavy uppercase">Cuidado Esencial</h4>
+                        <p class="text-2xl font-black text-brandnavy my-2">$1,630 <span class="text-xs font-normal text-slate-500">/ año</span></p>
+                        
+                        <ul class="text-xs space-y-2 text-slate-600 mt-4">
+                            <li class="font-bold text-slate-800 border-b pb-1">COBERTURAS PRINCIPALES:</li>
+                            <li>✓ Gastos Médicos: <strong>$10,000</strong></li>
+                            <li>✓ Responsabilidad Civil: <strong>$10,000</strong></li>
+                            <li class="text-slate-400">✕ Fallecimiento: No incluido</li>
+                            <li class="text-slate-400">✕ Robo con Violencia: No incluido</li>
+                            
+                            <li class="font-bold text-slate-800 border-b pb-1 pt-3">INCLUYE ASISTENCIAS:</li>
+                            <li>✓ Vet Telefónica <strong>Ilimitada</strong></li>
+                            <li>✓ Desparasitación (1 evento)</li>
+                            <li>✓ Pipeta Antipulgas (1 evento)</li>
+                            <li>✓ Vacuna Antirrábica</li>
+                            <li>✓ Servicio de Cremación</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5218182806318?text=Hola%20Carlos,%20me%20interesa%20el%20plan%20CUIDADO%20ESENCIAL%20para%20mi%20mascota." 
+                       target="_blank" class="mt-6 w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-2.5 rounded-xl text-center text-xs block uppercase">
+                        Cotizar Esencial
+                    </a>
+                </div>
+            
+            </div>
+        
+            <!-- Footer Modal -->
+            <div class="bg-slate-50 p-4 text-center border-t border-slate-200">
+                <button onclick="document.getElementById('modal-mascotas').classList.add('hidden')" class="text-slate-500 hover:text-slate-700 font-bold text-xs uppercase">
+                    Cerrar Ventana
+                </button>
+            </div>
+        
+        </div>
+    </div>
 
 </body>
 </html>
